@@ -1,0 +1,68 @@
+/*
+ * Copyright (c) 2015 Alec Martin, all rights reserved.
+ */
+
+/* Fonts */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v7/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+/* Global Selectors */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	cursor: default;
+	text-decoration: none;
+}
+
+*::-moz-selection {
+    background-color: Transparent;
+    color: inherit;
+}
+
+*::selection {
+    background-color: Transparent;
+    color: inherit;
+}
+
+body {
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	background-size: cover;
+	color: black;
+	font-family: Ubuntu, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+/* Logo  and Name */
+#logo-container {
+	z-index: -1000;
+	position: absolute;
+	width: 512px;
+	top: 50%;
+	left: 50%;
+	margin-left: -256px;
+	margin-top: -256px;
+}
+
+#logo-text-container {
+	position: absolute;
+	text-align: center;
+}
+
+#logo-text-alec {
+	font-size: 100px;
+	font-weight: bold;
+	color: #ffa811;
+}
+
+#logo-text-martin {
+	color: white;
+	font-weight: bold;
+	font-size: 100px;
+}
